@@ -1,0 +1,353 @@
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet" />
+<style type="text/css">.sliderticks {
+  display: flex;
+}
+.slidertick {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.slidertick:first-child > span { margin-right: auto; }
+.slidertick:last-child  > span { margin-left: auto; }
+
+#baseimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#header{
+  /*text-align: center;*/
+}
+
+</style>
+<section class="container" id="ImageComparisons" style="padding-top:10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:medium;">
+  <div class="row col-12">
+    <p>Below are one BASE pose at top-middle. Then other poses: 5 in RED group, 5 in BLUE group, 5 in GREEN group are followed in left, middle, right column format respectively.</p>
+    <p>Poses in same color group are chosen by same method. Each group contains 5 poses. These poses are supposed to be similar to the BASE pose. We call them similar poses</p>
+    <p>
+      Please choose <b>only</b> one of groups that has most of similar poses. <b>Notice</b> that "similar" does not necessary to be identical with BASE, but be close enough in your opinion.
+      <b>Also</b>, the <b>order</b> in same color group (top to down or 1st to 5th) is crucial (i.e. 1st one should be similar to BASE one than 5th one does).
+    </p>
+
+    <p>
+      Hence, you can choose group based on two category 1) counting numbers of similar poses in same color group 2) judging order of these similar poses makes sense.
+      Chose the one you think is best.
+    </p>
+
+  </div>
+
+  <hr /><!-- hidden images to load images in background (real images will only be displayed once the page has finished loading) --> <!-- edited images -->
+  <div class="row" id = "header">
+
+      <img alt="image_url" class="img-responsive" id="baseimg" src="" style=" width:auto; max-height:300px; max-width:100%;" />
+
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px; font-size:x-large; font-weight: bold;">Group 1</div>
+    <div class="col text-center" style="padding-left:5px; padding-right:5px; font-size:x-large; font-weight: bold;">Group 2</div>
+
+    <div class="col text-center" style="padding-left:5px; font-size:x-large; font-weight: bold;">Group 3</div>
+
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px;">
+      <img alt="image_url" class="img-responsive" id="position1" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid green; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+    <div class="col text-center" style="padding-left:5px;padding-right:5px">
+      <img alt="image_url" class="img-responsive" id="combined1" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid blue; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+    <div class="col text-center" style="padding-left:5px;">
+      <img alt="image_url" class="img-responsive" id="rotation1" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid red; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px;">
+      <img alt="image_url" class="img-responsive" id="position2" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid green; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;padding-right:5px">
+      <img alt="image_url" class="img-responsive" id="combined2" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid blue; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;">
+      <img alt="image_url" class="img-responsive" id="rotation2" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid red; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px;">
+      <img alt="image_url" class="img-responsive" id="position3" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid green; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;padding-right:5px">
+      <img alt="image_url" class="img-responsive" id="combined3" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid blue; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;">
+      <img alt="image_url" class="img-responsive" id="rotation3" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid red; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px;">
+      <img alt="image_url" class="img-responsive" id="position4" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid green; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;padding-right:5px">
+      <img alt="image_url" class="img-responsive" id="combined4" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid blue; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;">
+      <img alt="image_url" class="img-responsive" id="rotation4" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid red; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center" style="padding-right:5px;">
+      <img alt="image_url" class="img-responsive" id="position5" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid green; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;padding-right:5px">
+      <img alt="image_url" class="img-responsive" id="combined5" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid blue; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+
+    <div class="col text-center" style="padding-left:5px;">
+      <img alt="image_url" class="img-responsive" id="rotation5" src="https://github.com/paulguerrero/layout_metric_userstudy_data/raw/main/loading.png" style="border:5px solid red; width:auto; max-height:300px; max-width:100%;" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="btn-group col-12" data-toggle="buttons" id="btns" role="group" style="padding-top:20px;">
+<!--      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_0" name="userchoice" type="radio" value="0" /> -->
+<!--        <label class="btn btn-outline-primary" for="btn_0" style="font-size:14pt; width: 100%;">+++</label> -->
+<!--      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_1" name="userchoice" type="radio" value="1" /> -->
+<!--        <label class="btn btn-outline-primary" for="btn_1" style="font-size:14pt; width: 100%;">++</label> -->
+      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_2" name="userchoice" type="radio" value="2" />
+        <label class="btn btn-outline-primary" for="btn_2" style="font-size:14pt; width: 100%;">1</label>
+      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_3" name="userchoice" type="radio" value="3" />
+        <label class="btn btn-outline-primary" for="btn_3" style="font-size:14pt; width: 100%;">2</label>
+      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_4" name="userchoice" type="radio" value="4" />
+        <label class="btn btn-outline-primary" for="btn_4" style="font-size:14pt; width: 100%;">3</label>
+<!--      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_5" name="userchoice" type="radio" value="5" /> -->
+<!--        <label class="btn btn-outline-primary" for="btn_5" style="font-size:14pt; width: 100%;">++</label> -->
+<!--      <input autocomplete="off" class="btn-check" disabled="disabled" id="btn_6" name="userchoice" type="radio" value="6" /> -->
+<!--        <label class="btn btn-outline-primary" for="btn_6" style="font-size:14pt; width: 100%;">+++</label>-->
+    </div>
+  </div>
+  <!-- user choice range labels -->
+
+  <div class="row" style="margin-top:-10px;">
+    <div class="col-12 text-center">&nbsp;</div>
+
+    <div class="sliderticks">
+      <div class="slidertick"><span style="text-align: center;">|</span></div>
+    </div>
+  </div>
+
+  <div class="col-12 text-center">&nbsp;</div>
+
+  <div class="sliderticks">
+    <div class="slidertick"><span style="text-align: left;">Group 1 is BEST</span></div>
+
+    <div class="slidertick"><span style="text-align: center;">Group 2 is BEST</span></div>
+
+    <div class="slidertick"><span style="text-align: right;">Group 3 is BEST</span></div>
+  </div>
+  <!-- <input type="hidden" id="userchoice" name="userchoice_reversed" value="0"> --> <!-- submit button -->
+
+  <div class="row" style="margin-top:10px;">
+    <div class="col-12 text-center"><input autocomplete="off" class="btn btn-primary" disabled="disabled" id="submitButton" type="submit" value="Loading ..." /></div>
+  </div>
+  <!-- feedback -->
+
+  <div class="row" style="margin-top:20px;">
+    <div class="col-12" id="divOutput">If you have any questions about this HIT, encounter a problem, or have suggestions on how we could improve it, please let us know: <input id="comment" name="comment" style="width: 100%;" type="text" value="" /></div>
+  </div>
+</section>
+<script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script language="javascript" type="text/javascript">
+
+  var param = function(url, name ) {
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)";
+    var regex = new RegExp( regexS );
+    var results = regex.exec( url );
+    return ( results == null ) ? "" : results[1];
+  };
+
+  var previewmode = param(window.location.href, "assignmentId") == "ASSIGNMENT_ID_NOT_AVAILABLE";
+
+  window.onload = function() {
+
+    var submitbtn = document.getElementById('submitButton');
+    // var userchoice_0 = document.getElementById('btn_0');
+    // var userchoice_1 = document.getElementById('btn_1');
+    var userchoice_2 = document.getElementById('btn_2');
+    var userchoice_3 = document.getElementById('btn_3');
+    var userchoice_4 = document.getElementById('btn_4');
+    // var userchoice_5 = document.getElementById('btn_5');
+    // var userchoice_6 = document.getElementById('btn_6');
+    // var userchoice_reversed = document.getElementById('userchoice_reversed');
+
+    submitbtn.disabled = true;
+    // userchoice_0.disabled = true;
+    // userchoice_1.disabled = true;
+    userchoice_2.disabled = true;
+    userchoice_3.disabled = true;
+    userchoice_4.disabled = true;
+    // userchoice_5.disabled = true;
+    // userchoice_6.disabled = true;
+
+    if (previewmode) {
+      submitbtn.value = 'ACCEPT the HIT before submitting.';
+    } else {
+      submitbtn.value = 'Waiting for choice';
+    }
+
+
+    let main = document.getElementById('baseimg');
+    let position1 = document.getElementById('position1');
+    let rotation1 = document.getElementById('rotation1');
+    let combined1 = document.getElementById('combined1');
+
+    let position2 = document.getElementById('position2');
+    let rotation2 = document.getElementById('rotation2');
+    let combined2 = document.getElementById('combined2');
+
+    let position3 = document.getElementById('position3');
+    let rotation3 = document.getElementById('rotation3');
+    let combined3 = document.getElementById('combined3');
+
+    let position4 = document.getElementById('position4');
+    let rotation4 = document.getElementById('rotation4');
+    let combined4 = document.getElementById('combined4');
+
+    let position5 = document.getElementById('position5');
+    let rotation5 = document.getElementById('rotation5');
+    let combined5 = document.getElementById('combined5');
+
+    // var leftimage = document.getElementById('leftimg');
+    // var rightimage = document.getElementById('rightimg');
+
+
+    let c = "combined/";
+    let p = "position/"
+    let r = "rotation/"
+
+    let common_query = "https://github.com/zhawhjw/survey-related/raw/main/SearchSurvey/"
+
+    let main_suffix = "Main%20Camera.png"
+    let first_suffix = "Sub%20Camera1.png"
+    let second_suffix = "Sub%20Camera2.png"
+    let third_suffix = "Sub%20Camera3.png"
+    let forth_suffix = "Sub%20Camera4.png"
+    let fifth_suffix = "Sub%20Camera5.png"
+
+
+
+
+    if (previewmode) {
+
+      let name = "2Hand-Sword-Attack5" + "/";
+
+      main.src = common_query + name + c + main_suffix;
+
+      position1.src = common_query + name + p + first_suffix;
+      rotation1.src = common_query + name + r + first_suffix;
+      combined1.src = common_query + name + c + first_suffix;
+
+      position2.src = common_query + name + p + second_suffix;
+      rotation2.src = common_query + name + r + second_suffix;
+      combined2.src = common_query + name + c + second_suffix
+
+      position3.src = common_query + name + p + third_suffix;
+      rotation3.src = common_query + name + r + third_suffix;
+      combined3.src = common_query + name + c + third_suffix
+
+      position4.src = common_query + name + p + forth_suffix;
+      rotation4.src = common_query + name + r + forth_suffix;
+      combined4.src = common_query + name + c + forth_suffix
+
+      position5.src = common_query + name + p + fifth_suffix;
+      rotation5.src = common_query + name + r + fifth_suffix;
+      combined5.src = common_query + name + c + fifth_suffix;
+
+    } else {
+
+
+      let name = "${name}" + "/";
+
+      main.src = common_query + name + c + main_suffix;
+
+      position1.src = common_query + name + p + first_suffix;
+      rotation1.src = common_query + name + r + first_suffix;
+      combined1.src = common_query + name + c + first_suffix;
+
+      position2.src = common_query + name + p + second_suffix;
+      rotation2.src = common_query + name + r + second_suffix;
+      combined2.src = common_query + name + c + second_suffix
+
+      position3.src = common_query + name + p + third_suffix;
+      rotation3.src = common_query + name + r + third_suffix;
+      combined3.src = common_query + name + c + third_suffix
+
+      position4.src = common_query + name + p + forth_suffix;
+      rotation4.src = common_query + name + r + forth_suffix;
+      combined4.src = common_query + name + c + forth_suffix
+
+      position5.src = common_query + name + p + fifth_suffix;
+      rotation5.src = common_query + name + r + fifth_suffix;
+      combined5.src = common_query + name + c + fifth_suffix;
+
+      // leftimage.src = img1url;
+      // rightimage.src = img2url;
+
+      // userchoice_0.value = 0;
+      // userchoice_1.value = 1;
+      userchoice_2.value = 2;
+      userchoice_3.value = 3;
+      userchoice_4.value = 4;
+      // userchoice_5.value = 5;
+      // userchoice_6.value = 6;
+
+      // userchoice_0.disabled = false;
+      // userchoice_1.disabled = false;
+      userchoice_2.disabled = false;
+      userchoice_3.disabled = false;
+      userchoice_4.disabled = false;
+      // userchoice_5.disabled = false;
+      // userchoice_6.disabled = false;
+    }
+
+    // leftvideo.load();
+    // rightvideo.load();
+
+    // $('button:button[name=userchoice]').on('change', userchoice_clicked)
+    $("#btns").on('click', userchoice_clicked)
+
+    function userchoice_clicked() {
+      if (!previewmode) {
+        var submitbtn = document.getElementById('submitButton');
+        submitbtn.disabled = false;
+        submitbtn.value = 'Submit';
+
+      }
+    }
+
+    // $("#userchoice_range").on('change', userchoice_changed)
+    // function userchoice_changed() {
+    //     if (!previewmode) {
+    //         console.log(`value: ${userchoice_range.value} - reversed: ${userchoice_reversed.value}`)
+    //     }
+    // }
+
+
+  };
+
+</script>
